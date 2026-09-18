@@ -2,6 +2,7 @@
 import { SEO } from "astro-seo";
 import {
     GITHUB_URL,
+    MY_NAME,
     SITE_DESC,
     SITE_TITLE,
     WEBSITE_URL,
@@ -138,7 +139,7 @@ const DEFAULT_IMAGE = `${GITHUB_URL}.png`;
                       { type: 2, style: 5, url: CANONICAL_URL, label: "🍥 Visit" },
                       { type: 2, style: 5, url: `${CANONICAL_URL}posts`, label: "🔖 Blog" },
                       { type: 2, style: 5, url: GITHUB_URL, label: "🛠️ Github" },
-                      { type: 2, style: 5, url: GITHUB_URL, label: "💌 Sponsor" },
+                      { type: 2, style: 5, url: `https://github.com/sponsors/${MY_NAME}`, label: "💌 Sponsor" },
                   ]
               }
           ]
