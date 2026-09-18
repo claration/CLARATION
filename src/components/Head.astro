@@ -79,21 +79,38 @@ const DEFAULT_IMAGE = `${GITHUB_URL}.png`;
         type: 17,
         accent_color: 14446451,
         components: [
-            {
-                type: 9,
-                components: [
-                    {
-                        type: 10,
-                        content: "## About Me\nHey! My name is **C**, or as you may know me as \"CLARATION\"! I'm a passionate programmer for Apple platforms, interested in pushing the limits on what these platforms can do, and highly interested in LLVM and other native technologies!"
-                    }
-                ],
-                accessory: {
-                    type: 11,
-                    media: {
-                        url: DEFAULT_IMAGE
+            ...(ogImage ? [
+                {
+                    type: 10,
+                    content: `## ${title}`
+                },
+                {
+                    type: 12,
+                    items: [
+                        {
+                            media: {
+                                url: ogImage
+                            }
+                        }
+                    ]
+                }
+            ] : [
+                {
+                    type: 9,
+                    components: [
+                        {
+                            type: 10,
+                            content: `## ${title ?? "About Me"}\nHey! My name is **C**, or as you may know me as "CLARATION"! I'm a passionate programmer for Apple platforms, interested in pushing the limits on what these platforms can do, and highly interested in LLVM and other native technologies!`
+                        }
+                    ],
+                    accessory: {
+                        type: 11,
+                        media: {
+                            url: DEFAULT_IMAGE
+                        }
                     }
                 }
-            },
+            ]),
             {
                 type: 14
             },
