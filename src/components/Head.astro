@@ -82,14 +82,14 @@ const DEFAULT_IMAGE = `${GITHUB_URL}.png`;
           components: [
               {
                   type: 10,
-                  content: `## ${title}`
+                  content: `## ${title}\nsammy's blog post`
               },
               {
                   type: 12,
                   items: [
                       {
                           media: {
-                              url: `${CANONICAL_URL}${ogImage}`
+                              url: `${WEBSITE_URL}${ogImage}`
                           }
                       }
                   ]
@@ -98,12 +98,9 @@ const DEFAULT_IMAGE = `${GITHUB_URL}.png`;
                   type: 14
               },
               {
-                  type: 1,
-                  components: [
-                      { type: 2, style: 5, url: `${CANONICAL_URL}posts`, label: "📝 Blog" },
-                      { type: 2, style: 5, url: GITHUB_URL, label: "👾 Github" },
-                  ]
-              }
+                  type: 10,
+                  content: `-# Written by C`
+              },
           ]
       }
   }, null, 2)} />
