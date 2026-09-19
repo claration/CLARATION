@@ -14,6 +14,12 @@ export default defineConfig({
         }),
     ],
 
+    server: {
+    allowedHosts: [
+      '.trycloudflare.com'
+    ]
+  },
+
     markdown: {
         remarkPlugins: [remarkTOC],
         rehypePlugins: [rehypeHeadingIds, anchors],
