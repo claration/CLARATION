@@ -13,7 +13,7 @@ export const TWITTER_URL = `https://x.com/${MY_OLD_NAME}`;
 
 export const X_ARRAY: Friend[] = [
     {
-        site: "https://khcrysalis.dev",
+        site: "https://claration.dev",
         image: "./88x31/me.png",
     },
     {
@@ -88,5 +88,5 @@ export const REPO_ARRAY = [
     `https://api.github.com/repos/palera1n/palen1x`,
     `https://api.github.com/repos/palera1n/loader`,
     `https://api.github.com/repos/${MY_NAME}/Binder`,
-    `https://api.github.com/repos/${MY_NAME}/khcrysalis.dev`,
+    `https://api.github.com/repos/${MY_NAME}/claration`,
 ];
